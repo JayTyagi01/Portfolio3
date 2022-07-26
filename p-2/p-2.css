@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.person{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;/*for gap btween nav*/
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgb(157, 157, 56);
+}
+.home{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.home h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+span{
+    color: orange;
+}
+.home p{
+    color: #555;
+    line-height: 22px;
+}
+.home a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.img{
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    right: 40px;
+}
+
+.img img{
+    height: 100%;
+position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about{
+    margin: 20px;
+    height: 100vh;
+}
+.about h2{
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+}
+.h-text{
+    max-width:500px ;
+    position: absolute;
+    
+    right: 10%;
+    z-index: -1;
+}
+.h-text h1{
+    font-size: 60px;
+    color:black;
+    margin: 8px;
+}
+.h-text p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: black;
+    margin: 9px;
+}
+#pic2{
+    width: 350px;
+    height: 50%;
+    position: absolute;
+    left: 10%;
+    
+    z-index: -1;
+    
+}
+.img2{
+    margin: 30px;
+    padding: 20px;
+}
+#qualifications{
+  margin: 10px;
+  padding: 50px;
+    background-color: #eff4fd;;
+    width: auto;
+    height: 100vh;
+}
+.qualifications h1{
+  text-align: center;
+  color:black;
+  justify-content: space-between;
+  font-size: 50px;
+  
+}
+.qual-text{
+    max-width:700px ;
+    position: absolute;
+    left: 20%;    
+}
+.qual-text p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: black;
+    margin: 50px;
+}
+#pic3{
+    width: 350px;
+    height: 50%;
+    position: absolute;
+    right: 10%;
+    
+}
+.img3{
+    margin: 30px;
+    padding: 20px;
+}
+.myclicks{
+    background-color: #212121;
+    margin: 70px;
+    padding: auto;
+    height: 92vh;
+}
+.myclicks h1{
+    text-align: center;
+    color:white;
+    justify-content: space-between;
+    font-size: 50px;
+    
+  }
+  .card{
+      display: flex;
+      right: 20%;
+      }
+.flip-card {
+    background-color: transparent;
+    width: 800px;
+    margin: 50px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: orange;
+    color: black;
+    transform: rotateY(180deg);
+  }
+  
+.box {
+  background-color: #fff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 80px;
+  }
+.projects{
+    font-family: 'Roboto', sans-serif;
+    background-color: #eff4fd;
+    justify-content: center;
+    display: flex;
+}
+.projects h1{
+    text-align: center;
+    margin: 100px;
+    font-size: 50px;
+}
+.projects h2{
+  display: none;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 20px;
+  
+  
+  }
+  
+  .grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(187, 163, 206, 1);
+    background-color: #fff;
+    padding: 5% 0;
+     border-radius: 20px;
+  }
+  
+  
+  .grid .text {
+    padding: 10px 20px 20px 30px;
+    color: #808285;
+    margin-bottom: 20px;  
+  }
+  
+  .grid .btn {
+    margin-top: 20px;
+    background-color: #e0d4e9;
+      border: 0;
+      border-radius: 5px;
+      color: #000;
+      font-size: 15px;
+      padding: 5px 10px 5px 10px;
+    line-height: 5;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    
+  }
+  
+  .btn:hover {
+    background: #d1d3d4;
+    transition-duration: 80ms;
+  }
+  
+  h3{ 
+    color: #000;
+    text-align: left;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: white;
+    font-size: 17px;
+    width: auto;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    background: rgba(36, 206, 178, 0.438);
+    transition: .3s;
+}
+
+.end {
+    position: absolute;
+    color: #cf7f07;
+    bottom: 35px;
+    font-size: 14px;
+}
+@media (max-width:480px){
+  *{
+    width: 94%;
+  }
+  nav{
+    font-size: 12px;
+    padding: 10px;
+
+  }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;/*for gap btween nav*/   
+}
+.img5{
+  height: 30px;
+  width: 200px;
+}
+.home{
+  margin-left: 2%;
+  margin-top: 15%;
+  
+}
+.home h1{
+  font-size: 35px;
+  
+}
+.home p{  
+font-size: 15px;
+width: 50%;
+}
+.img{
+  width: 45%;
+  height: 40%;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+.person{
+  height: 120vh;
+}
+.about{
+  width: 96%;
+  margin: 1px;
+  height: 80vh;
+}
+.about h2{
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+}
+.h-text{
+  
+  position: absolute;
+  
+  left: 10px;
+  
+}
+.h-text h1{
+  font-size: 30px;
+  color:black;
+  margin: 8px;
+}
+.h-text p{
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: black;
+  margin: 10px;
+  width: 50%;
+}
+#pic2{
+  width: 130px;
+  height: 30%;
+  position: absolute;
+  left: 53%;
+  top: 1000px;
+  
+  
+}
+.img2{
+  margin: 10px;
+  padding: 10px;
+}
+#qualifications{
+  
+  width: auto;
+  height: 159vh;
+}
+.qualifications h1{
+  font-size: 30px;
+}
+.qual-text{
+  top:1700px ;
+  left: 10%;
+  width: 70%;
+
+}
+#pic3{
+  height:30% ;
+  width: 70%;
+  left: 10%;
+}
+
+.qual-text p{
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: black;
+  margin: 30px;
+}
+.myclicks{
+  background-color: #212121;
+  margin: 10px;
+  padding: auto;
+  height: 280vh;
+}
+.myclicks h1{
+  text-align: center;
+  color:white;
+  justify-content: space-between;
+  font-size: 50px;
+  
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  margin: 50px;
+  height: 500px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+ .box {width: 60%;
+  display: flex;
+}
+.projects{
+  font-family: 'Roboto', sans-serif;
+  background-color: #eff4fd;
+  justify-content: center;
+  display: flex;
+  margin: 10px;
+}
+.projects h1{
+  display: none;
+}
+.container h2{
+  display: contents;
+}
+.grid > article {
+width: 70%;  
+padding: 0% 0% 0%;
+margin-top: 40px;
+}
+footer {
+  position: relative;
+  width:332px;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p:nth-child(1) {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+footer p:nth-child(2) {
+  color: white;
+  font-size: 17px;
+  width: auto;
+  text-align: center;
+  line-height: 26px;
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  width: 105px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  margin: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social a:hover {
+  transform: scale(1.3);
+  background: rgba(36, 206, 178, 0.438);
+  transition: .3s;
+}
+
+.end {
+  position: absolute;
+  text-align: center;
+  color: #cf7f07;
+  bottom: 35px;
+  font-size: 14px;
+}
+.fab{
+  width: 10%;
+}
+}
